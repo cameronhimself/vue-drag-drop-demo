@@ -1,0 +1,100 @@
+<template>
+	<div>
+		<h1>Live demos for <a href="https://github.com/cameronhimself/vue-drag-drop/">VueDragDrop</a></h1>
+		<p>The source code for these demos is <a href="https://github.com/cameronhimself/vue-drag-drop-demo/tree/master/src">here</a>.</p>
+		<div class="section">
+			<h3>Minimal example</h3>
+			<minimal></minimal>
+		</div>
+		<div class="section">
+			<h3>Custom drag-over styling</h3>
+			<styling></styling>
+		</div>
+		<div class="section">
+			<h3>Custom drag image</h3>
+			<p>The simplest way to set a custom drag image is to use the 'image' prop.</p> 
+			<drag-image></drag-image>
+		</div>
+		<div class="section">
+			<h3>Custom drag image with HTML</h3>
+			<p>You can also use custom HTML for the drag image using the 'image' slot. When using HTML for the drag image, the spec requires it to be visible, so the component will render it off-screen using 'position: fixed'. If you'd prefer it didn't do this for you, you can set the 'hideImageHtml' prop to false.</p>
+			<drag-html></drag-html>
+		</div>
+		<div class="section">
+			<h3>Exclusive groups</h3>
+			<p>No magic here. Control how your app behaves with simple props and data.</p>
+			<groups></groups>
+		</div>
+		<div class="section">
+			<h3>Basic list support</h3>
+			<p>There are plenty of existing components that handle this much more robustly, mostly using sortable.js or dragula behind the scenes, but if you don't need all their bells and whistles this works in a basic way that's much more light-weight.</p>
+			<lists></lists>
+		</div>
+		<div class="section">
+			<h3>Files</h3>
+			<p>Nothing special&mdash;use the native event's 'files' object.</p>
+			<files></files>
+		</div>
+
+	</div>
+</template>
+
+<script>
+	import Minimal from './Minimal.vue';
+	import Styling from './Styling.vue';
+	import DragImage from './DragImage.vue';
+	import DragHtml from './DragHtml.vue';
+	import Groups from './Groups.vue';
+	import Lists from './Lists.vue';
+	import Files from './Files.vue';
+
+	export default {
+		components: { Minimal, Styling, DragImage, DragHtml, Groups, Lists, Files },
+	};
+</script>
+
+<style>
+	html {
+		font-family: 'Arial', sans-serif;
+	}
+
+	body {
+		padding: 40px 90px;
+		line-height: 1.5;
+	}
+
+	.section {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	.drag, .drop {
+		box-sizing: border-box;
+		display: inline-block;
+		border-radius: 10px;
+		width: 100px;
+		height: 100px;
+		background: #ccc;
+		vertical-align: middle;
+		margin-right: 20px;
+		position: relative;
+		padding: 5px;
+		padding-top: 35px;
+		text-align: center;
+		margin: 3px;
+	}
+
+	.drag {
+		color: #fff;
+		cursor: move;
+		background: #777;
+		border-right: 2px solid #666;
+		border-bottom: 2px solid #666;
+	}
+
+	.drop {
+		background: #eee;
+		border-top: 2px solid #ccc;
+		border-left: 2px solid #ddd;
+	}
+</style>
