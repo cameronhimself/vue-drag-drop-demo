@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<github-ribbon />
 		<h1>Live demos for <a href="https://github.com/cameronhimself/vue-drag-drop/">VueDragDrop</a></h1>
 		<p>The source code for these demos is <a href="https://github.com/cameronhimself/vue-drag-drop-demo/tree/master/src">here</a>.</p>
 		<div class="section">
@@ -44,6 +45,7 @@
 </template>
 
 <script>
+	import GithubRibbon from './GithubRibbon.vue';
 	import Minimal from './Minimal.vue';
 	import Styling from './Styling.vue';
 	import DragImage from './DragImage.vue';
@@ -54,7 +56,7 @@
 	import Scoped from './Scoped.vue';
 
 	export default {
-		components: { Minimal, Styling, DragImage, DragHtml, Groups, Lists, Files, Scoped },
+		components: { GithubRibbon, Minimal, Styling, DragImage, DragHtml, Groups, Lists, Files, Scoped },
 	};
 </script>
 
