@@ -35,7 +35,11 @@
 			<p>Nothing special&mdash;use the native event's 'files' object.</p>
 			<files></files>
 		</div>
-
+		<div class="section">
+			<h3>Scoped slots</h3>
+			<p>The drag transfer data is also provided via scope data in the default slot. It's arguably better to handle the transfer data using standard prop flow in your application, but using the scoped slot is quick and easy. It's also a simple way to check if a drag is in progress over a dropzone, which can be tricky to do: if the transferData is set on the Drop, you know a drag is in progress.</p>
+			<scoped></scoped>
+		</div>
 	</div>
 </template>
 
@@ -47,9 +51,10 @@
 	import Groups from './Groups.vue';
 	import Lists from './Lists.vue';
 	import Files from './Files.vue';
+	import Scoped from './Scoped.vue';
 
 	export default {
-		components: { Minimal, Styling, DragImage, DragHtml, Groups, Lists, Files },
+		components: { Minimal, Styling, DragImage, DragHtml, Groups, Lists, Files, Scoped },
 	};
 </script>
 
