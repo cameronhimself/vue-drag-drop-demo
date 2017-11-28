@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<drag class="drag" :transferData="{ example: 'drag-html' }">
+		<drag class="drag" :transfer-data="{ example: 'drag-html' }">
 			drag
 			<div slot="image" class="drag-image">
 				<ul>
