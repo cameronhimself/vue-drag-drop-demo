@@ -12,6 +12,11 @@
 			<styling></styling>
 		</div>
 		<div class="section">
+			<h3>Nested drag elements</h3>
+			<p>You have to stopPropagation on the child's dragstart event, otherwise the parent's transfer data takes precedence.</p>
+			<nested></nested>
+		</div>
+		<div class="section">
 			<h3>Custom drag image</h3>
 			<p>The simplest way to set a custom drag image is to use the 'image' prop.</p> 
 			<drag-image></drag-image>
