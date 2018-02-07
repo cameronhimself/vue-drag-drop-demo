@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<drag class="drag" :transferData="scopedData">
+		<drag class="drag" :transfer-data="scopedData">
 			<template scope="props">
 				<div v-if="props.transferData">
 					{{ props.transferData.dragText }}

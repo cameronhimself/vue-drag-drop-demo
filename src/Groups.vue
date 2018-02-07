@@ -3,7 +3,7 @@
 		<div>
 			<drag v-for="group in groups" class="drag"
 				:key="group"
-				:transferData="{ group, example: 'groups' }"
+				:transfer-data="{ group, example: 'groups' }"
 				@dragstart="dragging = group"
 				@dragend="dragging = null">
 					{{ group }}

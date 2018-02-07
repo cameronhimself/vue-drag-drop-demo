@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<drag :transferData="{ example: 'minimal' }">drag</drag>
+		<drag :transfer-data="{ example: 'minimal' }">drag</drag>
 		<drop @drop="handleDrop">drop</drop>
 	</div>
 </template>

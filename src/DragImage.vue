@@ -2,7 +2,7 @@
 	<div>
 		<drag class="drag"
 			:image="require('./assets/drag.png')"
-			:transferData="{ example: 'drag-image' }">
+			:transfer-data="{ example: 'drag-image' }">
 			drag
 		</drag>
 		<drop class="drop" @drop="handleDrop">drop</drop>

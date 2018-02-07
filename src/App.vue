@@ -18,7 +18,7 @@
 		</div>
 		<div class="section">
 			<h3>Custom drag image with HTML</h3>
-			<p>You can also use custom HTML for the drag image using the 'image' slot. When using HTML for the drag image, the spec requires it to be visible, so the component will render it off-screen using 'position: fixed'. If you'd prefer it didn't do this for you, you can set the 'hideImageHtml' prop to false.</p>
+			<p>You can also use custom HTML for the drag image using the 'image' slot. When using HTML for the drag image, the spec requires it to be visible, so the component will render it off-screen using 'position: fixed'. If you'd prefer it didn't do this for you, you can set the 'hide-image-html' prop to false.</p>
 			<drag-html></drag-html>
 		</div>
 		<div class="section">
@@ -38,7 +38,7 @@
 		</div>
 		<div class="section">
 			<h3>Scoped slots</h3>
-			<p>The drag transfer data is also provided via scope data in the default slot. It's arguably better to handle the transfer data using standard prop flow in your application, but using the scoped slot is quick and easy. It's also a simple way to check if a drag is in progress over a dropzone, which can be tricky to do: if the transferData is set on the Drop, you know a drag is in progress.</p>
+			<p>The drag transfer data is also provided via scope data in the default slot. It's arguably better to handle the transfer data using standard prop flow in your application, but using the scoped slot is quick and easy. It's also a simple way to check if a drag is in progress over a dropzone, which can be tricky to do: if the transfer-data is set on the Drop, you know a drag is in progress.</p>
 			<scoped></scoped>
 		</div>
 	</div>
@@ -48,6 +48,7 @@
 	import GithubRibbon from './GithubRibbon.vue';
 	import Minimal from './Minimal.vue';
 	import Styling from './Styling.vue';
+	import Nested from './Nested.vue';
 	import DragImage from './DragImage.vue';
 	import DragHtml from './DragHtml.vue';
 	import Groups from './Groups.vue';
@@ -56,7 +57,7 @@
 	import Scoped from './Scoped.vue';
 
 	export default {
-		components: { GithubRibbon, Minimal, Styling, DragImage, DragHtml, Groups, Lists, Files, Scoped },
+		components: { GithubRibbon, Minimal, Styling, Nested, DragImage, DragHtml, Groups, Lists, Files, Scoped },
 	};
 </script>
 
