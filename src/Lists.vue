@@ -6,7 +6,7 @@
 					class="drag"
 					:key="item"
 					:class="{ [item]: true }"
-					:transfer-data="{ item, list, example: 'lists' }">
+					:transfer-data="{ item: item, list: list, example: 'lists' }">
 						{{ item }}
 				</drag>
 			</drop>
