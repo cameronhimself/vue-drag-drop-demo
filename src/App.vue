@@ -12,13 +12,18 @@
 			<styling></styling>
 		</div>
 		<div class="section">
+			<h3>Custom tags</h3>
+			<p>The default is div for the root element for both Drags and Drops, but you can use any tag you like.</p>
+			<tags></tags>
+		</div>
+		<div class="section">
 			<h3>Nested drag elements</h3>
 			<p>You have to stopPropagation on the child's dragstart event, otherwise the parent's transfer data takes precedence.</p>
 			<nested></nested>
 		</div>
 		<div class="section">
 			<h3>Custom drag image</h3>
-			<p>The simplest way to set a custom drag image is to use the 'image' prop.</p> 
+			<p>The simplest way to set a custom drag image is to use the 'image' prop.</p>
 			<drag-image></drag-image>
 		</div>
 		<div class="section">
@@ -52,6 +57,7 @@
 <script>
 	import GithubRibbon from './GithubRibbon.vue';
 	import Minimal from './Minimal.vue';
+	import Tags from './Tags.vue';
 	import Styling from './Styling.vue';
 	import Nested from './Nested.vue';
 	import DragImage from './DragImage.vue';
@@ -62,7 +68,7 @@
 	import Scoped from './Scoped.vue';
 
 	export default {
-		components: { GithubRibbon, Minimal, Styling, Nested, DragImage, DragHtml, Groups, Lists, Files, Scoped },
+		components: { GithubRibbon, Minimal, Tags, Styling, Nested, DragImage, DragHtml, Groups, Lists, Files, Scoped },
 	};
 </script>
 
