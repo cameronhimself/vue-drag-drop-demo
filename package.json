@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "vue": "^2.3.3",
-    "vue-drag-drop": "^0.2.4"
+    "vue-drag-drop": "^1.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
