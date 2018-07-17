@@ -32,6 +32,10 @@
 			<drag-html></drag-html>
 		</div>
 		<div class="section">
+			<h3>Drop effects (cursors)</h3>
+			<drop-effects></drop-effects>
+		</div>
+		<div class="section">
 			<h3>Exclusive groups</h3>
 			<p>No magic here. Control how your app behaves with simple props and data.</p>
 			<groups></groups>
@@ -62,13 +66,14 @@
 	import Nested from './Nested.vue';
 	import DragImage from './DragImage.vue';
 	import DragHtml from './DragHtml.vue';
+	import DropEffects from './DropEffects.vue';
 	import Groups from './Groups.vue';
 	import Lists from './Lists.vue';
 	import Files from './Files.vue';
 	import Scoped from './Scoped.vue';
 
 	export default {
-		components: { GithubRibbon, Minimal, Tags, Styling, Nested, DragImage, DragHtml, Groups, Lists, Files, Scoped },
+		components: { GithubRibbon, Minimal, Tags, Styling, Nested, DragImage, DragHtml, DropEffects, Groups, Lists, Files, Scoped },
 	};
 </script>
 
